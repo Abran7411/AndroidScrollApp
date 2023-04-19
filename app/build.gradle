@@ -27,20 +27,19 @@ android {
     }
 
 
-    dataBinding {
-        enabled = true
+    buildFeatures{
+        dataBinding true
     }
-
     buildTypes {
         debug {
             buildConfigField "String", "BASE_URL", "\"https://pixabay.com/\""
-            buildConfigField "String", "PHOTOS_API_KEY", "\"api/?key=350SADAS90435-36a15ebe2307c4596397f6143/\""
+            buildConfigField "String", "PHOTOS_API_KEY", "\"35090435-36a15ebe2307c4596397f6143\""
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField "String", "BASE_URL", "\"https://pixabay.com/\""
-            buildConfigField "String", "PHOTOS_API_KEY", "\"api/?key=350SADAS90435-36a15ebe2307c4596397f6143/\""
+            buildConfigField "String", "PHOTOS_API_KEY", "\"35090435-36a15ebe2307c4596397f6143\""
         }
     }
 }
